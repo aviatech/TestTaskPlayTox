@@ -1,4 +1,4 @@
-package account.ru.maslenkin.testtaskplaytox;
+package account.ru.maslenkin.testtaskplaytox.account;
 
 public class Account {
     private String ID;
