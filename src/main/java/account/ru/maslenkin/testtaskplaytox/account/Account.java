@@ -12,7 +12,9 @@ public class Account implements Runnable {
     private int money;
 
     public Account() {
+        this.ID = generateId();
         this.money = 10000;
+
     }
 
     public String getID() {
@@ -67,6 +69,7 @@ public class Account implements Runnable {
     }
 
     public void run() {
+
         logger.debug("Account {} start", this.ID );
 
     }
