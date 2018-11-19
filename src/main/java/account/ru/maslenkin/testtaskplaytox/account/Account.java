@@ -14,9 +14,7 @@ public class Account implements Runnable {
     public Account() {
         this.ID = generateId();
         this.money = 10000;
-
     }
-
     public String getID() {
         return ID;
     }
@@ -39,8 +37,6 @@ public class Account implements Runnable {
         } else {
             money -= transferAmount;
         }
-
-
     }
 
     public void receiveMoney(int transferAmount) {
@@ -51,26 +47,22 @@ public class Account implements Runnable {
         return new Random().nextInt(1001) + 1000;
     }
 
-
     private String generateId() {
         int lengthStringId = 5;
-        int leftLimit = 65;
-        int rightLimit = 90;
+        int firstSymbol = 65;
+        int lastSymbol = 90;
         Random random = new Random();
         StringBuilder stringIdBuilder = new StringBuilder(lengthStringId);
         for (int i = 0; i < lengthStringId; ++i) {
-            int randomLimitedInt = leftLimit + (int)
-                    (random.nextFloat() * (rightLimit - leftLimit + 1));
-            char id = (char) randomLimitedInt;
+            int randomStringId = firstSymbol + (int)
+                    (random.nextFloat() * (lastSymbol - firstSymbol + 1));
+            char id = (char) randomStringId;
             stringIdBuilder.append(id);
         }
         return stringIdBuilder.toString();
-
     }
 
     public void run() {
-
         logger.debug("Account {} start", this.ID );
-
     }
 }
