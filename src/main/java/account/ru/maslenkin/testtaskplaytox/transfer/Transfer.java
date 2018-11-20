@@ -11,35 +11,43 @@ public class Transfer {
     private int transferLimit;
     private final Object lock = new Object();
 
-    public Transfer() {
-    }
-
     public Transfer(int transferLimit) {
         this.transferLimit = transferLimit;
     }
 
-    public void setTransferLimit(int transferLimit) {
-        this.transferLimit = transferLimit;
-    }
-
-    private void getLog() {
-    }
-
-    public Condition sendMoney(int transferAmount, Account sender, Account recipient) {
+    public ConditionTransfer sendMoney(int transferAmount, Account sender, Account recipient) {
         synchronized (lock) {
             if (transferCount >= transferLimit) {
-                return Condition.EXCESS_TRANSFER;
+                return ConditionTransfer.EXCESS_TRANSFER;
             } else {
                 try {
-                    sender.sendMoney(transferAmount);
-                    recipient.receiveMoney(transferAmount);
+                    sender.withdrawMoney(transferAmount);
+                    recipient.addMoney(transferAmount);
                     ++transferCount;
-                    getLog();
-                    logger.debug("Number of transaction {} Account {} sent {} Recipient {} ",transferCount, sender.getID(), transferAmount, recipient.getID() );
-
-                    return Condition.OK;
+                    logger.info("Number of transaction {} Account {} sent {} Sender balance {} Recipient {} Recipient balance {}", transferCount, sender.getID(), transferAmount, sender.getMoney(), recipient.getID(), recipient.getMoney());
+                    return ConditionTransfer.OK;
                 } catch (InsufficientFundsAccountException e) {
-                    return Condition.INSUFFICIENT_FUNDS;
+                    logger.warn("Account not enough money", sender.getID());
+                    return ConditionTransfer.INSUFFICIENT_FUNDS;
+                }
+            }
+        }
+    }
+
+    public ConditionTransfer requireMoney(int transferAmount, Account sender1, Account recipient1) {
+        synchronized (lock) {
+            if (transferCount >= transferLimit) {
+                return ConditionTransfer.EXCESS_TRANSFER;
+            } else {
+                try {
+                    sender1.withdrawMoney(transferAmount);
+                    recipient1.addMoney(transferAmount);
+                    ++transferCount;
+                    logger.info("Number of transaction {} Account {} sent {} Sender balance {} Recipient {} Recipient balance{}", transferCount, sender1.getID(), transferAmount, sender1.getMoney(), recipient1.getID(), recipient1.getMoney());
+                    return ConditionTransfer.OK;
+                } catch (InsufficientFundsAccountException e) {
+                    logger.warn("Account not enough money", sender1.getID());
+                    return ConditionTransfer.INSUFFICIENT_FUNDS;
                 }
             }
         }

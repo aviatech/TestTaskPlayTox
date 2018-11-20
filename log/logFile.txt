@@ -1,0 +1,39 @@
+21:52:24.577 DEBUG [Thread-0] - Create account WYXWG
+21:52:24.577 DEBUG [Thread-1] - Create account FADFU
+21:52:24.591 INFO [Thread-0] - Number of transaction 1 Account WYXWG sent 4108 Sender balance 5892 Recipient FADFU Recipient balance 14108
+21:52:24.592 INFO [Thread-1] - Number of transaction 2 Account FADFU sent 2126 Sender balance 11982 Recipient WYXWG Recipient balance8018
+21:52:25.739 INFO [Thread-0] - Number of transaction 3 Account WYXWG sent 167 Sender balance 7851 Recipient FADFU Recipient balance 12149
+21:52:26.543 INFO [Thread-1] - Number of transaction 4 Account FADFU sent 5276 Sender balance 6873 Recipient WYXWG Recipient balance13127
+21:52:27.369 INFO [Thread-0] - Number of transaction 5 Account WYXWG sent 127 Sender balance 13000 Recipient FADFU Recipient balance 7000
+21:52:28.218 WARN [Thread-1] - Account not enough money
+21:52:29.368 INFO [Thread-0] - Number of transaction 6 Account WYXWG sent 1633 Sender balance 11367 Recipient FADFU Recipient balance 8633
+21:52:29.410 INFO [Thread-1] - Number of transaction 7 Account FADFU sent 216 Sender balance 8417 Recipient WYXWG Recipient balance11583
+21:52:30.751 WARN [Thread-1] - Account not enough money
+21:52:31.304 INFO [Thread-0] - Number of transaction 8 Account WYXWG sent 3798 Sender balance 7785 Recipient FADFU Recipient balance 12215
+21:52:31.903 INFO [Thread-1] - Number of transaction 9 Account FADFU sent 5177 Sender balance 7038 Recipient WYXWG Recipient balance12962
+21:52:33.027 INFO [Thread-0] - Number of transaction 10 Account WYXWG sent 4077 Sender balance 8885 Recipient FADFU Recipient balance 11115
+21:52:33.472 INFO [Thread-1] - Number of transaction 11 Account FADFU sent 9418 Sender balance 1697 Recipient WYXWG Recipient balance18303
+21:52:34.799 INFO [Thread-0] - Number of transaction 12 Account WYXWG sent 3507 Sender balance 14796 Recipient FADFU Recipient balance 5204
+21:52:35.114 WARN [Thread-1] - Account not enough money
+21:52:36.389 WARN [Thread-1] - Account not enough money
+21:52:36.475 INFO [Thread-0] - Number of transaction 13 Account WYXWG sent 5573 Sender balance 9223 Recipient FADFU Recipient balance 10777
+21:52:38.022 INFO [Thread-1] - Number of transaction 14 Account FADFU sent 5044 Sender balance 5733 Recipient WYXWG Recipient balance14267
+21:52:38.191 INFO [Thread-0] - Number of transaction 15 Account WYXWG sent 2987 Sender balance 11280 Recipient FADFU Recipient balance 8720
+21:52:39.411 INFO [Thread-0] - Number of transaction 16 Account WYXWG sent 5686 Sender balance 5594 Recipient FADFU Recipient balance 14406
+21:52:39.881 INFO [Thread-1] - Number of transaction 17 Account FADFU sent 771 Sender balance 13635 Recipient WYXWG Recipient balance6365
+21:52:40.920 INFO [Thread-0] - Number of transaction 18 Account WYXWG sent 183 Sender balance 6182 Recipient FADFU Recipient balance 13818
+21:52:41.009 INFO [Thread-1] - Number of transaction 19 Account FADFU sent 1327 Sender balance 12491 Recipient WYXWG Recipient balance7509
+21:52:42.660 INFO [Thread-0] - Number of transaction 20 Account WYXWG sent 5935 Sender balance 1574 Recipient FADFU Recipient balance 18426
+21:52:42.835 INFO [Thread-1] - Number of transaction 21 Account FADFU sent 937 Sender balance 17489 Recipient WYXWG Recipient balance2511
+21:52:44.094 INFO [Thread-1] - Number of transaction 22 Account FADFU sent 2003 Sender balance 15486 Recipient WYXWG Recipient balance4514
+21:52:44.276 INFO [Thread-0] - Number of transaction 23 Account WYXWG sent 3040 Sender balance 1474 Recipient FADFU Recipient balance 18526
+21:52:45.229 INFO [Thread-1] - Number of transaction 24 Account FADFU sent 424 Sender balance 18102 Recipient WYXWG Recipient balance1898
+21:52:45.812 INFO [Thread-0] - Number of transaction 25 Account WYXWG sent 1273 Sender balance 625 Recipient FADFU Recipient balance 19375
+21:52:47.167 INFO [Thread-1] - Number of transaction 26 Account FADFU sent 1685 Sender balance 17690 Recipient WYXWG Recipient balance2310
+21:52:47.311 WARN [Thread-0] - Account not enough money
+21:52:48.786 INFO [Thread-1] - Number of transaction 27 Account FADFU sent 1925 Sender balance 15765 Recipient WYXWG Recipient balance4235
+21:52:48.828 WARN [Thread-0] - Account not enough money
+21:52:49.803 INFO [Thread-1] - Number of transaction 28 Account FADFU sent 4739 Sender balance 11026 Recipient WYXWG Recipient balance8974
+21:52:50.122 INFO [Thread-0] - Number of transaction 29 Account WYXWG sent 5342 Sender balance 3632 Recipient FADFU Recipient balance 16368
+21:52:51.183 WARN [Thread-0] - Account not enough money
+21:52:51.662 INFO [Thread-1] - Number of transaction 30 Account FADFU sent 1012 Sender balance 15356 Recipient WYXWG Recipient balance4644
